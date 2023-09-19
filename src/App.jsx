@@ -1,7 +1,7 @@
 import './App.css'
 import { useState } from 'react';
 
-import Prospect from './components/prospect/prospect';
+import Prospect from './components/prospect/Prospect';
 import Company from './components/company/Company';
 import GenerateEmail from './components/generateEmail/GenerateEmail';
 import OutputEmail from './components/outputEmail/OutputEmail';
