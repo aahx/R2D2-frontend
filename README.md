@@ -1,8 +1,20 @@
-# React + Vite
+# AI Sales/ Marketing Email Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Works by feeding it your 
+- company information
+- prospect information
+- and your sales rep name.
 
-Currently, two official plugins are available:
+Backend using LangChain, OpenAI API, and FastAPI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies
+React and Axios
+Hosted on Heroku
+
+# Live Link
+https://c-3po-7b01e63c1cde.herokuapp.com/
+### Please be patient - takes a few seconds to load forms - making API Calls to Backend
+
+# Backend
+GitHub Link: https://github.com/aahx/R2D2-backend
+Heroku Backend Link: https://r2d2-mike-7f8d7793b971.herokuapp.com/docs
