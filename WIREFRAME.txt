@@ -1,0 +1,18 @@
+                                Generate Email Form  
+----------------------------    ----------------------------    
+| Input: New Prospect Info |    |   company_info           |
+|                          |    |   prospect_file          |
+|                          |    |   (form) company_name    |
+|                          |    |   (form) prospect_name   |
+|                          |    |   (form) sales_rep       |
+|          [Submit]        |    |             [Generate]   |
+----------------------------    ----------------------------
+                                
+----------------------------    ----------------------------    
+| Input: New Prospect Info |    | Output: Email            |
+|                          |    |                          |
+|                          |    |                          |
+|                          |    |                          |
+|                          |    |                          |
+|          [Submit]        |    |                          |
+----------------------------    ----------------------------
