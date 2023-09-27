@@ -42,6 +42,8 @@ export default function GenerateEmail({setAiGeneratedEmail}) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
+        await fetchCompanyData();
+        
 
         try {
             const requestPayload = {
