@@ -8,8 +8,7 @@ import OutputEmail from './components/outputEmail/OutputEmail';
 
 function App() {
   // Company Description
-  const rapidRoadDescription = `
-  RapidRoad helps product teams build product faster. 
+  const rapidRoadDescription = `  RapidRoad helps product teams build product faster. 
   
   We have a platform that allows product teams to talk more, exchange ideas, and listen to more customers.
   
@@ -24,7 +23,6 @@ function App() {
 
   const [companyInfo, setCompanyInfo] = useState(rapidRoadDescription);
   const [aiGeneratedEmail, setAiGeneratedEmail] = useState("");
-
 
   
   return (
