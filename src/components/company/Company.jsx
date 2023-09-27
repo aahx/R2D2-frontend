@@ -11,7 +11,7 @@ export default function Company({ companyInfo, setCompanyInfo }) {
 
         window.loadingTimeout = setTimeout(() => {
             setLoading(false);
-        }, 500);
+        }, 600);
     }
 
     return (
