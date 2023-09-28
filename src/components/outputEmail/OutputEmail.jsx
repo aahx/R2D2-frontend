@@ -1,18 +1,24 @@
-export default function OutputEmail({aiGeneratedEmail}){
+export default function OutputEmail({ aiGeneratedEmail }) {
     return (
         <section className="OutputEmail">
-            <label>
-                <h2>
-                    Ai Generated Marketing Email
-                    </h2>
+            <label className="output-titles">
+                A.I. Generated Marketing Email
             </label>
+
             <div className="email-container">
                 <div className="email-content">
                     {aiGeneratedEmail}
                 </div>
             </div>
-            {/* <button type="button">GitHub</button>
-            <button type="button">LinkedIn</button> */}
+            <div className="link-container">
+                <a href="https://github.com/aahx/R2D2-frontend" target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
+
+                <a href="https://r2d2-mike-7f8d7793b971.herokuapp.com/docs" target="_blank" rel="noopener noreferrer">
+                    Backend Swagger
+                </a>
+            </div>
         </section>
     )
 }

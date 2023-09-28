@@ -42,10 +42,9 @@ export default function GenerateEmail({ companyInfo, prospectInfo, setAiGenerate
                 company_name: companyName,
                 sales_rep: salesRep
             };
-
             const response = await axios.post(`${BASE_URL}/generate_email`, requestPayload);
-
             setAiGeneratedEmail(response.data.output_text);
+            
         } catch (error) {
             console.log(error);
         } finally {

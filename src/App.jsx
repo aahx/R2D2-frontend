@@ -28,13 +28,10 @@ function App() {
   
   Built on Open Source, GitLab leverages the community contributions of thousands of developers and millions of users to continuously deliver new DevOps innovations. More than 100,000 organizations from startups to global enterprise organizations, including Ticketmaster, Jaguar Land Rover, NASDAQ, Dish Network and Comcast trust GitLab to deliver great software at new speeds.`;
 
-
-
-
+  // Props
   const [companyInfo, setCompanyInfo] = useState(DEFAULT_COMPANY_DESCRIPT);
   const [prospectInfo, setProspectInfo] = useState(DEFAULT_PROSPECT_DESCRIPT);
   const [aiGeneratedEmail, setAiGeneratedEmail] = useState("");
-
 
   return (
     <>
@@ -52,7 +49,9 @@ function App() {
           prospectInfo={prospectInfo} 
           setAiGeneratedEmail={setAiGeneratedEmail} 
           />
-        <OutputEmail aiGeneratedEmail={aiGeneratedEmail} />
+        <OutputEmail 
+          aiGeneratedEmail={aiGeneratedEmail} 
+          />
       </div>
     </>
   )
