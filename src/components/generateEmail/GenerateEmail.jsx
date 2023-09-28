@@ -78,21 +78,21 @@ export default function GenerateEmail({ companyInfo, prospectInfo, setAiGenerate
 
                 <div className="form-container">
                     <form onSubmit={handleSubmit}>
-                        <label>Enter Your Company Name</label>
+                        <label>Enter Your Company Name: </label>
                         <input
                             type="text"
                             value={companyName}
                             onChange={(e) => setCompanyName(e.target.value)}
                             />
                         <br/>
-                        <label>Enter Prospect Company Name</label>
+                        <label>Enter Prospect Company Name: </label>
                         <input
                             type="text"
                             value={prospectName}
                             onChange={(e) => setProspectName(e.target.value)}
                             />
                         <br/>
-                        <label>Enter Your Sales Rep Name</label>
+                        <label>Enter Your Sales Rep Name: </label>
                         <input
                             type="text"
                             value={salesRep}

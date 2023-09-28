@@ -45,7 +45,7 @@ h1 {
   font-size: 20px;
   font-weight: 500;
 }
-.company-textarea {
+.Company .company-textarea {
   padding: 5px;
   min-width: 90%;
   max-width: 97vw;
@@ -68,7 +68,7 @@ h1 {
   font-size: 20px;
   font-weight: 500;
 }
-.prospect-textarea {
+.Prospect .prospect-textarea {
   padding: 5px;
   min-width: 90%;
   max-width: 97vw;
@@ -81,33 +81,49 @@ h1 {
 
 .GenerateEmail {
   grid-column: 2 / 3;
-  /* Second column */
   grid-row: 1 / 2;
-  /* First row */
+  margin-right: 10px;
+  border: 1px solid red;
 }
-
-.GenerateEmail form {
+.GenerateEmail .container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.GenerateEmail .instruction-container{
+  min-height: 45px;
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.GenerateEmail .instruction {
+  color: red;
+  font-size: 20px;
+}
+.GenerateEmail .form-container{
+  height: 100%;
+  border: 1px solid green;
   text-align: start;
   padding-left: 20px;
 }
-
-.GenerateEmail .instruction {
-  color: red;
-  margin-bottom: 5px;
+.GenerateEmail .form-container form{
+  border: 1px solid orange;
+  height: 100%;
 }
-
-.GenerateEmail input {
-  width: 30%;
+.GenerateEmail .form-container label {
+  color: darkblue;
+}
+.GenerateEmail .form-container input {
+  margin-left: 10px;
+  margin-bottom: 15px;
   height: 20px;
   padding-left: 5px;
-  margin-left: 5px;
-  margin-bottom: 10px;
   color: black;
   font-size: 15px;
 }
-
-.button-container {
-  margin-top: 15px;
+.GenerateEmail .button-container {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
