@@ -26,6 +26,10 @@ export default function GenerateEmail({ companyInfo, prospectInfo, setAiGenerate
         "Generating..",
         "Generating...",
         "Wait for it...",
+        "Heroku Dyno warming up...",
+        "Excellence is a patient process...",
+        "Great things are brewing...",
+        "Exciting things are unfolding..."
     ];
 
 
@@ -44,7 +48,7 @@ export default function GenerateEmail({ companyInfo, prospectInfo, setAiGenerate
             };
             const response = await axios.post(`${BASE_URL}/generate_email`, requestPayload);
             setAiGeneratedEmail(response.data.output_text);
-            
+
         } catch (error) {
             console.log(error);
         } finally {
@@ -83,22 +87,22 @@ export default function GenerateEmail({ companyInfo, prospectInfo, setAiGenerate
                             type="text"
                             value={companyName}
                             onChange={(e) => setCompanyName(e.target.value)}
-                            />
-                        <br/>
+                        />
+                        <br />
                         <label>Enter Prospect Company Name: </label>
                         <input
                             type="text"
                             value={prospectName}
                             onChange={(e) => setProspectName(e.target.value)}
-                            />
-                        <br/>
+                        />
+                        <br />
                         <label>Enter Your Sales Rep Name: </label>
                         <input
                             type="text"
                             value={salesRep}
                             onChange={(e) => setSalesRep(e.target.value)}
-                            />
-                        <br/>
+                        />
+                        <br />
                         <div className="button-container">
                             <button id="test" type="submit" disabled={loading}>
                                 {loading ? loadingMessages[loadingScrollIndex] : "Generate Email"}

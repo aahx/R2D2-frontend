@@ -37,7 +37,6 @@ h1 {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   margin-left: 10px;
-  border: 1px solid red;
 }
 .Company label {
   color: blue;
@@ -48,7 +47,7 @@ h1 {
 .Company .company-textarea {
   padding: 5px;
   min-width: 90%;
-  max-width: 97vw;
+  max-width: 85vw;
   min-height: 160px;
   max-height: 80vh;
   font-size: 15px;
@@ -60,7 +59,6 @@ h1 {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
   margin-left: 10px;
-  border: 1px solid red;
 }
 .Prospect label {
   color: blue;
@@ -71,7 +69,7 @@ h1 {
 .Prospect .prospect-textarea {
   padding: 5px;
   min-width: 90%;
-  max-width: 97vw;
+  max-width: 85vw;
   min-height: 340px;
   max-height: 340px;
   font-size: 15px;
@@ -83,16 +81,16 @@ h1 {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   margin-right: 10px;
-  border: 1px solid red;
+  max-height: 240px;
 }
 .GenerateEmail .container{
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  overflow: auto;
 }
 .GenerateEmail .instruction-container{
   min-height: 45px;
-  border: 1px solid blue;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,12 +101,11 @@ h1 {
 }
 .GenerateEmail .form-container{
   height: 100%;
-  border: 1px solid green;
+  width: auto;
   text-align: start;
   padding-left: 20px;
 }
 .GenerateEmail .form-container form{
-  border: 1px solid orange;
   height: 100%;
 }
 .GenerateEmail .form-container label {
@@ -117,6 +114,7 @@ h1 {
 .GenerateEmail .form-container input {
   margin-left: 10px;
   margin-bottom: 15px;
+  min-width: 100px;
   height: 20px;
   padding-left: 5px;
   color: black;
@@ -130,33 +128,35 @@ h1 {
 }
 
 .OutputEmail {
-
   grid-column: 2 / 3;
-  /* Second column */
   grid-row: 2 / 3;
-  /* Second row */
+  margin-right: 10px;
 }
-
-.OutputEmail h2 {
-  margin: 0;
-  margin-bottom: 10px;
+.OutputEmail .title {
+  color: orange;
+  padding: 5px;
+  font-size: 27px;
+  font-weight: 900;
 }
-
-.email-container {
-  min-width: 550px;
-  min-height: 330px;
-  max-height: 330px;
-  height: 330px;
-  text-align: left;
+.OutputEmail .email-container {
+  border: 1px solid green;
+  padding: 5px;
+  min-height: 340px;
+  max-height: 340px;
+  height: 340px;
   overflow: auto;
-  border: 1px solid lightblue;
 }
-
-.email-content {
-  padding-right: 10px;
-  padding-bottom: 50px;
-  padding-left: 10px;
+.OutputEmail .email-content {
+  text-align: start;
   white-space: pre-wrap;
-  word-wrap: break-word;
-  font-size: 25px;
+  font-size: 18px;
+  font-family: inherit;
+  font-weight: 400;
+  padding-right: 5px;
+  padding-bottom: 10px;
+}
+.OutputEmail .link-container{
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-around;
 }
