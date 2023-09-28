@@ -19,7 +19,7 @@ export default function Prospect({ prospectInfo , setProspectInfo}){
         <section className="Prospect">
             <div className="container">
                 <label className={loading ? "green-label" : ""}>
-                    {loading ? "Updating Prospect Info" : "Prospect Company Info"}
+                    {loading ? "Updating Prospect Info" : "Enter Prospect Company Information:"}
                 </label>
                 <form>
                     <textarea 

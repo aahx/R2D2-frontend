@@ -18,7 +18,7 @@ export default function Company({ companyInfo, setCompanyInfo }) {
         <section className="Company">
             <div className="container">
                 <label className={loading ? "green-label" : ""}>
-                    {loading ? "Updating Company Info" : "Your Company Info"}
+                    {loading ? "Updating Company Info" : "Enter Your Company Information:"}
                 </label>
                 <form>
                     <textarea

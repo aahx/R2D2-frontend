@@ -4,7 +4,7 @@
   text-align: center;
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
 }
@@ -14,67 +14,89 @@ h1 {
   line-height: 1.1;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* First column takes 1 part, second column takes 2 parts */
-  grid-template-rows: 1fr 2fr; /* Two equal-height rows */
-  gap: 10px; /* Adjust the gap size as needed */
-  height: 100vh; /* Makes the grid take up the full viewport height */
+.green-label {
+  color: green;
 }
 
-.container{
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  gap: 10px;
+  height: 100vh;
+}
+
+.container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   height: 100%;
 }
-.green-label{
-  color: green;
-}
 
-
-/* Define unique styles for each window */
 .Company {
-  grid-column: 1 / 2; /* First column */
-  grid-row: 1 / 2;    /* First row */
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
   margin-left: 10px;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
-.company-textarea{
+.Company label {
+  color: blue;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.company-textarea {
   padding: 5px;
   min-width: 90%;
-  min-height: 130px;
+  max-width: 97vw;
+  min-height: 160px;
+  max-height: 80vh;
   font-size: 15px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  border: 1px solid green;
   white-space: pre-wrap;
+  font-family: inherit;
 }
 
 .Prospect {
-  grid-column: 1 / 2; /* First column */
-  grid-row: 2 / 3;    /* Second row */
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  margin-left: 10px;
+  border: 1px solid red;
 }
-.prospect-textarea{
+.Prospect label {
+  color: blue;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.prospect-textarea {
   padding: 5px;
   min-width: 90%;
+  max-width: 97vw;
   min-height: 340px;
+  max-height: 340px;
   font-size: 15px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  white-space: pre-wrap;
+  font-family: inherit;
 }
 
 .GenerateEmail {
-  grid-column: 2 / 3; /* Second column */
-  grid-row: 1 / 2;    /* First row */
+  grid-column: 2 / 3;
+  /* Second column */
+  grid-row: 1 / 2;
+  /* First row */
 }
-.GenerateEmail form{
+
+.GenerateEmail form {
   text-align: start;
   padding-left: 20px;
 }
-.GenerateEmail .instruction{
+
+.GenerateEmail .instruction {
   color: red;
   margin-bottom: 5px;
 }
-.GenerateEmail input{
+
+.GenerateEmail input {
   width: 30%;
   height: 20px;
   padding-left: 5px;
@@ -83,7 +105,8 @@ h1 {
   color: black;
   font-size: 15px;
 }
-.button-container{
+
+.button-container {
   margin-top: 15px;
   display: flex;
   justify-content: center;
@@ -92,14 +115,18 @@ h1 {
 
 .OutputEmail {
 
-  grid-column: 2 / 3; /* Second column */
-  grid-row: 2 / 3;    /* Second row */
+  grid-column: 2 / 3;
+  /* Second column */
+  grid-row: 2 / 3;
+  /* Second row */
 }
+
 .OutputEmail h2 {
   margin: 0;
   margin-bottom: 10px;
 }
-.email-container{
+
+.email-container {
   min-width: 550px;
   min-height: 330px;
   max-height: 330px;
@@ -108,7 +135,8 @@ h1 {
   overflow: auto;
   border: 1px solid lightblue;
 }
-.email-content{
+
+.email-content {
   padding-right: 10px;
   padding-bottom: 50px;
   padding-left: 10px;

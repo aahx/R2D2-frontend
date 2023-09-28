@@ -72,7 +72,7 @@ export default function GenerateEmail({ companyInfo, prospectInfo, setAiGenerate
             <div className="container">
                 <div className="instruction-container">
                     <span className="instruction">
-                        {companyName && prospectName && salesRep ? " " : "Please Fill in All Fields"}
+                        {companyName && prospectName && salesRep ? "" : "Please Fill in All Fields"}
                     </span>
                 </div>
 
